@@ -60,6 +60,7 @@ if (BUILD_COVERAGE)
     find_package(codecov)
     add_coverage(${PROJECT_NAME}-lib)
     add_coverage(tests)
+    add_coverage(${PROJECT_NAME}-app)
     coverage_evaluate()
 endif ()
 
